@@ -12,7 +12,7 @@ MODEL_PATH = os.path.join(ROOT, 'models')
 
 model = load_model(os.path.join(MODEL_PATH, 'mask_detection_model.keras'))
 
-label_map = {0: 'No Mask', 1: 'Mask'}
+label_map = {0: 'No Mask', 1: 'Mask'}  # Hardcoded the labels, The Project will not expand
 
 cap = cv2.VideoCapture(0)
 face_detection = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
